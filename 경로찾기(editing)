@@ -1,0 +1,23 @@
+#include<iostream>
+#include<cstdio>
+using namespace std;
+
+int n, k, start, e;
+int codes[1001];
+int solutions[1001][1001];
+int solutionum=0;
+int cm(int uno, int tri){
+	for(int i=0; i<k; i++){
+		codes[uno]%
+	}
+}
+int fakemain()
+int main(void){
+	scanf("%d %d", &n, &k);
+	for(int i=0; i<n; i++){
+		scanf("%d", &codes[i]);
+	}
+	scanf("%d %d", start, e);
+	fakemain()
+	return 0;
+}
