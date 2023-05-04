@@ -10,7 +10,7 @@ stack<int> via1;
 queue<int> ender;
 int nogada(int start, int elemen, int usable, int num){
 	via1.push(elemen);
-	printf("%d ", elemen);
+//	printf("%d ", elemen);
 	int finder = discuss_end[elemen];
 	int found=0;
 	for(int i =0; i<discussions; i++){
