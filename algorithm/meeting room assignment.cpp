@@ -22,7 +22,7 @@ int nogada(int start, int elemen, int usable, int num){
 	if(found==0){
 		ender.push(usable);
 		via1.pop();
-		printf("pushed : %d start : %d, element : %d\n", usable, start, elemen);
+		//printf("pushed : %d start : %d, element : %d\n", usable, start, elemen);
 		return 0;
 	}
 }
