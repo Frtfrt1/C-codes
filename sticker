@@ -1,20 +1,21 @@
-#include<cstdio>
 #include<iostream>
+#include<map>
 using namespace std;
-
-int f1[101], f2[101], answers[10];
-
 int main(void){
-	int n;
-	scanf("%d",&n);
-	for(int i = 0; i< n; i++){
-		int u = 0;
-		scanf("%d", &u);
+	cin.tie(NULL);
+	ios::sync_with_stdio(false);
+	map<int, int> f1;
+	map<int, int> f2;
+	long n;
+	cin>>n;
+	for(int i = 0; i<n; i++){
+		long u = 0;
+		cin>>u;
 		for(int j = 0; j < u; j++){
-			scanf("%d", &f1[j]);
+			cin>>f1[j];
 		}
 		for(int j = 0; j< u; j++){
-			scanf("%d", &f2[j]);
+			cin>>f2[j];
 		}
 		int max = 0;
 		for(int j = 1; j<=u; j++){
@@ -25,10 +26,7 @@ int main(void){
 			if(f1[j] < max) f1[j] = max;
 			if(f2[j] < max) f2[j] = max;
 		}
-		answers[i] = max;
-	}
-	for(int k = 0; k < n; k++){
-		printf("%d\n", answers[k]);
+		cout<<max<<"\n";
 	}
 	return 0;
 }
